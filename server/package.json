@@ -1,12 +1,12 @@
 {
   "name": "careerpilot-ai-server",
   "version": "1.0.0",
-  "description": "Backend server for CareerPilot AI",
-  "main": "dist/server.js",
+  "type": "module",
+  "description": "Backend server for CareerPilot AI (JavaScript version)",
+  "main": "src/server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "nodemon --watch src --ext ts --exec ts-node src/server.ts"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "dependencies": {
     "@google/genai": "latest",
@@ -19,11 +19,6 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.11.24",
-    "nodemon": "^3.1.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "nodemon": "^3.1.0"
   }
 }
